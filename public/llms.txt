@@ -1,0 +1,21 @@
+# Florin - Product Engineer & Indie Hacker
+
+## Profile
+High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools. 
+Location: Iasi, Romania / Remote.
+Availability: Open for high-impact collaborations and indie-hacking ventures.
+
+## Core Projects
+- Paje.ai: AI-driven page optimization.
+- Deeproductivity: High-performance focus tools.
+- MarketRoute: GTM strategy automation.
+- UIforSaaS: Design systems for developers.
+- Louis Purple Iasi: Specialized retail digital transformation.
+
+## Technical Stack
+React, Next.js, TypeScript, Tailwind CSS, Supabase, PostgreSQL, OpenAI API, Codex, Claude Code, Cursor, V0.
+
+## Contact
+GitHub: https://github.com/HustleCoding
+X/Twitter: https://x.com/florin_dev
+Email: florin.dobinciuc.dev@gmail.com
