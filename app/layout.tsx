@@ -15,21 +15,30 @@ export const metadata: Metadata = {
     "High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools. Shipping 12 projects in 2026.",
   generator: "v0.app",
   icons: {
-    icon: [
+    icon: "/florin-profile.png",
+    apple: "/florin-profile.png",
+  },
+  openGraph: {
+    title: "Florin - Product Engineer & Indie Hacker",
+    description:
+      "High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools. Shipping 12 projects in 2026.",
+    images: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/florin-profile.png",
+        width: 1200,
+        height: 630,
+        alt: "Florin - Product Engineer & Indie Hacker",
       },
     ],
-    apple: "/apple-icon.png",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Florin - Product Engineer & Indie Hacker",
+    description:
+      "High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools. Shipping 12 projects in 2026.",
+    images: ["/florin-profile.png"],
+    creator: "@florin_dev",
   },
 }
 
