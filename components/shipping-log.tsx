@@ -2,6 +2,13 @@ import Link from "next/link"
 
 const projects = [
   {
+    name: "Am I Raining",
+    url: "https://v0-weather-dashboard-pink.vercel.app",
+    description: "Weather dashboard app",
+    status: "Active",
+    year: "2026",
+  },
+  {
     name: "Paje.ai",
     url: "https://paje.ai",
     description: "AI-driven page optimization",

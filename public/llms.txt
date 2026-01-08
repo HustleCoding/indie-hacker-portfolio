@@ -6,6 +6,7 @@ Location: Iasi, Romania / Remote.
 Availability: Open for high-impact collaborations and indie-hacking ventures.
 
 ## Core Projects
+- Am I Raining: Weather dashboard app.
 - Paje.ai: AI-driven page optimization.
 - Deeproductivity: High-performance focus tools.
 - MarketRoute: GTM strategy automation.
