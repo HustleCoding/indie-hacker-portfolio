@@ -2,6 +2,13 @@ import Link from "next/link"
 
 const projects = [
   {
+    name: "Time Tracker",
+    url: "https://github.com/HustleCoding/time-tracker",
+    description: "Local-first desktop time tracking (Tauri + React)",
+    status: "Open Source",
+    year: "2025",
+  },
+  {
     name: "Am I Raining",
     url: "https://v0-weather-dashboard-pink.vercel.app",
     description: "Weather dashboard app",
@@ -78,7 +85,11 @@ export function ShippingLog() {
               <td className="px-3 sm:px-4 py-2 sm:py-3">
                 <span
                   className={`text-xs uppercase ${
-                    project.status === "Building" ? "text-green-600" : "text-muted-foreground"
+                    project.status === "Building"
+                      ? "text-green-600"
+                      : project.status === "Open Source"
+                        ? "text-blue-600"
+                        : "text-muted-foreground"
                   }`}
                 >
                   {project.status}

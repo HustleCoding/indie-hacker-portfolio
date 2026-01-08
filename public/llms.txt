@@ -6,6 +6,7 @@ Location: Iasi, Romania / Remote.
 Availability: Open for high-impact collaborations and indie-hacking ventures.
 
 ## Core Projects
+- Time Tracker: Local-first desktop time tracking with invoicing (Tauri + React). Open source.
 - Am I Raining: Weather dashboard app.
 - Paje.ai: AI-driven page optimization.
 - Deeproductivity: High-performance focus tools.
@@ -14,7 +15,7 @@ Availability: Open for high-impact collaborations and indie-hacking ventures.
 - Louis Purple Iasi: Specialized retail digital transformation.
 
 ## Technical Stack
-React, Next.js, TypeScript, Tailwind CSS, Supabase, PostgreSQL, OpenAI API, Codex, Claude Code, Cursor, V0.
+React, Next.js, TypeScript, Tailwind CSS, Supabase, PostgreSQL, OpenAI API, Codex, Claude Code, Cursor, V0, Tauri, Rust.
 
 ## Contact
 GitHub: https://github.com/HustleCoding
