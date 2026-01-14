@@ -1,30 +1,43 @@
-# Indie hacker portfolio
+# Indie Hacker Portfolio (Next.js)
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A simple, single-page portfolio built with Next.js App Router + Tailwind CSS.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/hustlecodings-projects/v0-indie-hacker-portfolio)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/qnqpaHzorfZ)
+## Quickstart
+Prereqs: Node.js (latest LTS recommended) + `pnpm`.
 
-## Overview
+```bash
+pnpm install
+pnpm dev
+```
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+Other useful commands:
+- `pnpm build`: production build (`next build`)
+- `pnpm start`: serve the production build (`next start`)
 
-## Deployment
+## Make It Your Own
+Most edits are simple find/replace in a few files:
+- Name, bio, “Technical Toolkit”, and GitHub username: `app/page.tsx`
+- Shipping/projects list: `components/shipping-log.tsx`
+- Footer links (GitHub/X/Email) and the “Copy for AI” button: `components/agent-footer.tsx` and `public/llms.txt`
+- Status pill text: `components/status-badge.tsx`
+- Social preview + favicon/OG image: `app/layout.tsx` and assets in `public/` (e.g. replace `public/florin-profile.png`)
+- Analytics: `app/layout.tsx` includes `@vercel/analytics` (remove if you don’t use Vercel Analytics)
 
-Your project is live at:
+## GitHub Activity (Required Token)
+The GitHub activity chart uses the GitHub GraphQL API via `app/api/github/route.ts`, which requires a token.
 
-**[https://vercel.com/hustlecodings-projects/v0-indie-hacker-portfolio](https://vercel.com/hustlecodings-projects/v0-indie-hacker-portfolio)**
+1. Create a GitHub Personal Access Token (classic) with `read:user`.
+2. Copy `.env.example` to `.env.local` and set `GITHUB_TOKEN`:
 
-## Build your app
+```bash
+# .env.local (do not commit)
+GITHUB_TOKEN=ghp_your_token_here
+```
 
-Continue building your app on:
+For Vercel, add `GITHUB_TOKEN` in your project’s Environment Variables.
 
-**[https://v0.app/chat/qnqpaHzorfZ](https://v0.app/chat/qnqpaHzorfZ)**
+Don’t want this feature? Remove the “GitHub Activity” section from `app/page.tsx`.
 
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## Notes
+- This repo was originally generated/synced via v0.app; you can continue using it, or just edit code directly.
+- See `AGENTS.md` for contributor guidelines and project conventions.
