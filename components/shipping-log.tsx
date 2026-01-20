@@ -16,6 +16,14 @@ const projects = [
     year: "2026",
   },
   {
+    name: "tuned.today",
+    url: "https://tuned.today",
+    description: "Work in progress",
+    status: "Active",
+    year: "2026",
+    highlight: true,
+  },
+  {
     name: "Paje.ai",
     url: "https://paje.ai",
     description: "AI-driven page optimization",
@@ -68,7 +76,15 @@ export function ShippingLog() {
         </thead>
         <tbody>
           {projects.map((project, index) => (
-            <tr key={project.name} className={index !== projects.length - 1 ? "border-b border-foreground" : ""}>
+            <tr
+              key={project.name}
+              className={[
+                index !== projects.length - 1 ? "border-b border-foreground" : "",
+                project.highlight ? "bg-foreground/5" : "",
+              ]
+                .filter(Boolean)
+                .join(" ")}
+            >
               <td className="px-3 sm:px-4 py-2 sm:py-3 font-bold">
                 <Link
                   href={project.url}
@@ -79,13 +95,20 @@ export function ShippingLog() {
                   {project.name}
                 </Link>
               </td>
-              <td className="px-3 sm:px-4 py-2 sm:py-3 text-muted-foreground hidden sm:table-cell">
+              <td
+                className={[
+                  "px-3 sm:px-4 py-2 sm:py-3 hidden sm:table-cell",
+                  project.highlight ? "text-foreground font-semibold" : "text-muted-foreground",
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
+              >
                 {project.description}
               </td>
               <td className="px-3 sm:px-4 py-2 sm:py-3">
                 <span
                   className={`text-xs uppercase ${
-                    project.status === "Building"
+                    project.status === "Building" || project.status === "Active"
                       ? "text-green-600"
                       : project.status === "Open Source"
                         ? "text-blue-600"

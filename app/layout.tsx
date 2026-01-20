@@ -12,7 +12,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Florin - Product Engineer & Indie Hacker",
   description:
-    "High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools. Shipping 12 projects in 2026.",
+    "High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools.",
   generator: "v0.app",
   icons: {
     icon: "/florin-profile.png",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Florin - Product Engineer & Indie Hacker",
     description:
-      "High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools. Shipping 12 projects in 2026.",
+      "High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools.",
     images: [
       {
         url: "/florin-profile.png",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Florin - Product Engineer & Indie Hacker",
     description:
-      "High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools. Shipping 12 projects in 2026.",
+      "High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools.",
     images: ["/florin-profile.png"],
     creator: "@florin_dev",
   },

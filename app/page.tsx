@@ -13,16 +13,14 @@ export default function Home() {
             <h1 className="font-mono text-3xl sm:text-4xl font-bold tracking-tight">Florin</h1>
             <StatusBadge />
           </div>
-          <p className="font-mono text-base sm:text-lg text-muted-foreground">
-            Product Engineer. Shipping 12 projects in 2026.
-          </p>
+          <p className="font-mono text-base sm:text-lg text-muted-foreground">AI Code Orchestrator. Agentic Engineer.</p>
         </header>
 
         {/* Mission */}
         <section className="mb-8 sm:mb-12">
           <p className="font-mono text-sm sm:text-base leading-relaxed">
-            High-velocity builder focused on AI, SaaS infrastructure, and Productivity tools. Based in Iasi, Romania.
-            Open for high-impact collaborations and indie-hacking ventures.
+            Extreme ownership, high-velocity shipping. Based in Iasi, Romania; Codex is my main agentic coding tool for
+            now.
           </p>
         </section>
 
