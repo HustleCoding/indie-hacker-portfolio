@@ -3,7 +3,11 @@ import Link from "next/link"
 const projects = [
   {
     name: "Time Tracker",
-    url: "https://github.com/HustleCoding/time-tracker",
+    url: "https://www.trytimetracker.com/",
+    links: [
+      { label: "Open", url: "https://www.trytimetracker.com/" },
+      { label: "Source", url: "https://github.com/HustleCoding/time-tracker" },
+    ],
     description: "Local-first desktop time tracking (Tauri + React)",
     status: "Open Source",
     year: "2025",
@@ -106,17 +110,33 @@ export function ShippingLog() {
                 {project.description}
               </td>
               <td className="px-3 sm:px-4 py-2 sm:py-3">
-                <span
-                  className={`text-xs uppercase ${
-                    project.status === "Building" || project.status === "Active"
-                      ? "text-green-600"
-                      : project.status === "Open Source"
-                        ? "text-blue-600"
-                        : "text-muted-foreground"
-                  }`}
-                >
-                  {project.status}
-                </span>
+                {project.links && project.links.length > 0 ? (
+                  <div className="flex flex-col items-start gap-1 text-xs uppercase">
+                    {project.links.map((link) => (
+                      <Link
+                        key={link.label}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline underline-offset-4"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <span
+                    className={`text-xs uppercase ${
+                      project.status === "Building" || project.status === "Active"
+                        ? "text-green-600"
+                        : project.status === "Open Source"
+                          ? "text-blue-600"
+                          : "text-muted-foreground"
+                    }`}
+                  >
+                    {project.status}
+                  </span>
+                )}
               </td>
               <td className="px-3 sm:px-4 py-2 sm:py-3 text-right text-muted-foreground">{project.year}</td>
             </tr>
